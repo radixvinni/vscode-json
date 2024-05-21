@@ -29,6 +29,11 @@ or
 
 ![Demo GIF](https://raw.githubusercontent.com/radixvinni/vscode-json/master/images/vscode-json.gif)
 
+beautifyTopLevel produces this result:
+
+![Demo PNG](https://github.com/radixvinni/vscode-json/blob/master/images/beautifyTopLevel.png)
+
+
 ## Requirements
 
 None
