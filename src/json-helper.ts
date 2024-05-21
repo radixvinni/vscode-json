@@ -4,7 +4,7 @@ export default class {
    * isValid
    * @param text
    */
-  public isValid(text: string): boolean {
+  public isValid (text: string): boolean {
     try {
       return typeof JSON.parse(text) === "object";
     } catch (err) {
@@ -16,11 +16,11 @@ export default class {
    * escape
    * @param text
    */
-  public escape(text: string): string {
+  public escape (text: string): string {
     return this.isValid(text)
       ? JSON.stringify(text)
-          .replace(/^"/g, "")
-          .replace(/"$/g, "")
+        .replace(/^"/g, "")
+        .replace(/"$/g, "")
       : text;
   }
 
@@ -28,7 +28,7 @@ export default class {
    * unescape
    * @param text
    */
-  public unescape(text: string): string {
+  public unescape (text: string): string {
     let formattedText = text;
     try {
       if (!text.startsWith('"')) {
@@ -50,7 +50,7 @@ export default class {
    * @param text
    * @param tabSize
    */
-  public beautify(text: string, tabSize?: number | string): string {
+  public beautify (text: string, tabSize?: number | string): string {
     return this.isValid(text)
       ? JSON.stringify(JSON.parse(text), null, tabSize)
       : text;
@@ -61,17 +61,17 @@ export default class {
    * @param text
    * @param tabSize
    */
-  public beautifyTopLevel(text: string, tabSize?: number | string): string {
+  public beautifyTopLevel (text: string, tabSize?: number | string): string {
     return this.isValid(text)
-      ? "{\n" + Object.entries(JSON.parse(text)).map((key,value) => '"'+key'": '+JSON.stringify(value, null, tabSize)).join(',\n'+tabSize) + "}"
+      ? "{\n" + Object.entries(JSON.parse(text)).map(([key, value]) => '"' + key + '": ' + JSON.stringify(value)).join(',\n') + "\n}"
       : text;
   }
-  
+
   /**
    * uglify
    * @param text
    */
-  public uglify(text: string): string {
+  public uglify (text: string): string {
     return this.isValid(text)
       ? JSON.stringify(JSON.parse(text), null, 0)
       : text;
@@ -80,5 +80,5 @@ export default class {
   /**
    * dispose
    */
-  dispose() {}
+  dispose () { }
 }
