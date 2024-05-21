@@ -1,6 +1,5 @@
 # vscode-json README
 
-![Build](https://github.com/radixvinni/vscode-json/workflows/.github/workflows/build-test.yml/badge.svg)
 [![downloads](https://img.shields.io/vscode-marketplace/d/radixvinni.vscode-json.svg)](https://marketplace.visualstudio.com/items?itemName=radixvinni.vscode-json)
 [![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/r/radixvinni.vscode-json.svg)](https://marketplace.visualstudio.com/items?itemName=radixvinni.vscode-json)
 [![Known Vulnerabilities](https://snyk.io/test/github/radixvinni/vscode-json/badge.svg?targetFile=package.json)](https://snyk.io/test/github/radixvinni/vscode-json?targetFile=package.json)
