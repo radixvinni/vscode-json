@@ -1,9 +1,9 @@
 # vscode-json README
 
-![Build](https://github.com/andyyaldoo/vscode-json/workflows/.github/workflows/build-test.yml/badge.svg)
-[![downloads](https://img.shields.io/vscode-marketplace/d/andyyaldoo.vscode-json.svg)](https://marketplace.visualstudio.com/items?itemName=andyyaldoo.vscode-json)
-[![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/r/andyyaldoo.vscode-json.svg)](https://marketplace.visualstudio.com/items?itemName=andyyaldoo.vscode-json)
-[![Known Vulnerabilities](https://snyk.io/test/github/andyyaldoo/vscode-json/badge.svg?targetFile=package.json)](https://snyk.io/test/github/andyyaldoo/vscode-json?targetFile=package.json)
+![Build](https://github.com/radixvinni/vscode-json/workflows/.github/workflows/build-test.yml/badge.svg)
+[![downloads](https://img.shields.io/vscode-marketplace/d/radixvinni.vscode-json.svg)](https://marketplace.visualstudio.com/items?itemName=radixvinni.vscode-json)
+[![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/r/radixvinni.vscode-json.svg)](https://marketplace.visualstudio.com/items?itemName=radixvinni.vscode-json)
+[![Known Vulnerabilities](https://snyk.io/test/github/radixvinni/vscode-json/badge.svg?targetFile=package.json)](https://snyk.io/test/github/radixvinni/vscode-json?targetFile=package.json)
 
 This vscode extension beautify/beautifyTopLevel/uglify/escape/unescape JSON.
 
@@ -17,7 +17,7 @@ There are plenty of existing JSON prettifier/beautifier extensions but for some 
 
 or
 
-- Download .vsix [here](https://github.com/andyyaldoo/vscode-json/releases)
+- Download .vsix [here](https://github.com/radixvinni/vscode-json/releases)
 
 ## Usage
 
@@ -28,7 +28,7 @@ or
 - Escape: `cmd+alt+'`
 - Unescape: `cmd+alt+;`
 
-![Demo GIF](https://raw.githubusercontent.com/andyyaldoo/vscode-json/master/images/vscode-json.gif)
+![Demo GIF](https://raw.githubusercontent.com/radixvinni/vscode-json/master/images/vscode-json.gif)
 
 ## Requirements
 
