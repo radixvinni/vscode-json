@@ -8,11 +8,11 @@ This vscode extension beautify/beautifyTopLevel/uglify/escape/unescape JSON.
 
 ## Features
 
-There are plenty of existing JSON prettifier/beautifier extensions but for some reason, there is no format depth setting in any of those. I forked yet another JSON tool because I need to format only a top level of JSON object a lot.
+There are plenty of existing JSON prettifier/beautifier extensions but for some reason, there is no format depth setting in any of those. I forked [yet another JSON tool](https://github.com/andyyaldoo/vscode-json) because I need to format only a top level of JSON object a lot.
 
 ## Install
 
-- Install via vscode extensions marketplace
+- Install via vscode extensions marketplace (not yet)
 
 or
 
