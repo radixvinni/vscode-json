@@ -23,6 +23,7 @@ or
 
 - Validate: `cmd+alt+v`
 - Beautify: `cmd+alt+b`
+- BeautifyTopLevel: `cmd+alt+t`
 - Uglify: `cmd+alt+u`
 - Escape: `cmd+alt+'`
 - Unescape: `cmd+alt+;`
