@@ -41,6 +41,11 @@
         "mac": "cmd+alt+b"
       },
       {
+        "command": "extension.beautifyJsonTopLevel",
+        "key": "ctrl+alt+t",
+        "mac": "cmd+alt+t"
+      },
+      {
         "command": "extension.uglifyJson",
         "key": "ctrl+alt+u",
         "mac": "cmd+alt+u"
@@ -64,6 +69,11 @@
       },
       {
         "command": "extension.beautifyJson",
+        "title": "Beautify",
+        "category": "vscode-json"
+      },
+      {
+        "command": "extension.beautifyJsonTopLevel",
         "title": "Beautify",
         "category": "vscode-json"
       },
