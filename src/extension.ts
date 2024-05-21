@@ -153,6 +153,44 @@ export function activate(context: ExtensionContext) {
   });
 
   /**
+   * beautifyJson
+   */
+  let beautifyJsonTopLevel = commands.registerCommand("extension.beautifyJsonTopLevel", () => {
+    // Get active editor
+    let editor = window.activeTextEditor;
+    if (!editor) {
+      return;
+    }
+
+    // Get the document
+    let doc = editor.document;
+    let text = doc.getText(editor.selection) || doc.getText();
+
+    // Remove trailing and leading whitespace
+    let trimmedText = text.trim().replace(/(?:^[\n\t\r]|[\n\t\r]$)/g, "");
+
+    // Beautify JSON
+    let beautifiedJson = jsonHelper.beautifyTopLevel(
+      trimmedText,
+      // tabs vs spaces
+      editor.options.insertSpaces ? editor.options.tabSize : "\t"
+    );
+    if (beautifiedJson !== trimmedText) {
+      // tabs vs spaces
+      let tabStyle = editor.options.insertSpaces ? " " : "\t";
+
+      if (!editor.selection.isEmpty) {
+        let start = editor.selection.start;
+        beautifiedJson = beautifiedJson.replace(
+          /(\n)/g,
+          "$1" + tabStyle.repeat(start.character)
+        );
+      }
+      setText(editor, beautifiedJson);
+    }
+  });
+  
+  /**
    * uglifyJson
    */
   let uglifyJson = commands.registerCommand("extension.uglifyJson", () => {
@@ -179,6 +217,7 @@ export function activate(context: ExtensionContext) {
   context.subscriptions.push(jsonHelper);
   context.subscriptions.push(validateJson);
   context.subscriptions.push(beautifyJson);
+  context.subscriptions.push(beautifyJsonTopLevel);
   context.subscriptions.push(uglifyJson);
   context.subscriptions.push(escapeJson);
   context.subscriptions.push(unescapeJson);
