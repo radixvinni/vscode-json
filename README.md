@@ -5,11 +5,11 @@
 [![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/r/andyyaldoo.vscode-json.svg)](https://marketplace.visualstudio.com/items?itemName=andyyaldoo.vscode-json)
 [![Known Vulnerabilities](https://snyk.io/test/github/andyyaldoo/vscode-json/badge.svg?targetFile=package.json)](https://snyk.io/test/github/andyyaldoo/vscode-json?targetFile=package.json)
 
-This vscode extension beautify/uglify/escape/unescape JSON.
+This vscode extension beautify/beautifyTopLevel/uglify/escape/unescape JSON.
 
 ## Features
 
-There are plenty of existing JSON prettifier/beautifier extensions but for some reason, Escape/Unescape JSON features are not included. I made yet another JSON tools because I use the escape/unescape feature a lot.
+There are plenty of existing JSON prettifier/beautifier extensions but for some reason, there is no format depth setting in any of those. I forked yet another JSON tool because I need to format only a top level of JSON object a lot.
 
 ## Install
 
