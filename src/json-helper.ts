@@ -57,6 +57,17 @@ export default class {
   }
 
   /**
+   * beautifyTopLevel
+   * @param text
+   * @param tabSize
+   */
+  public beautifyTopLevel(text: string, tabSize?: number | string): string {
+    return this.isValid(text)
+      ? "{\n" + Object.entries(JSON.parse(text)).map((key,value) => '"'+key'": '+JSON.stringify(value, null, tabSize)).join(',\n'+tabSize) + "}"
+      : text;
+  }
+  
+  /**
    * uglify
    * @param text
    */
